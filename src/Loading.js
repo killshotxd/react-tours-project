@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import { Ring } from "react-awesome-spinners";
 
 const Loading = () => {
   return (
     <div className="loading">
-      <h1>loading...</h1>
+      <h1>
+        <Ring />
+      </h1>
     </div>
   );
 };

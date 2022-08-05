@@ -1,11 +1,17 @@
 import React from "react";
 import Tour from "./Tour";
+import Fade from "react-reveal/Fade";
+import { Zoom } from "react-reveal";
 const Tours = ({ tours }) => {
   return (
     <section>
       <div className="title">
-        <h2>Our Tours</h2>
-        <div className="underline"></div>
+        <Fade right>
+          <h2>Our Tours</h2>
+        </Fade>
+        <Zoom>
+          <div className="underline"></div>
+        </Zoom>
       </div>
 
       <div>
