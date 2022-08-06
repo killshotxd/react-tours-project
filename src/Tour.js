@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
 
-const Tour = ({ id, image, info, price, name }) => {
+const Tour = ({ id, image, info, price, name, removeTour }) => {
   const [more, setMore] = useState(false);
   return (
     <Fade left>
@@ -18,7 +18,9 @@ const Tour = ({ id, image, info, price, name }) => {
               {more ? "Show less" : "read more"}
             </button>
           </p>
-          <button className="delete-btn">Not Interested</button>
+          <button className="delete-btn" onClick={() => removeTour(id)}>
+            not interested
+          </button>
         </footer>
       </article>
     </Fade>
